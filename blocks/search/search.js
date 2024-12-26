@@ -117,6 +117,8 @@ function renderResult(result, searchTerms, titleTag) {
 function clearSearchResults(block) {
   const searchResults = block.querySelector('.search-results');
   searchResults.innerHTML = '';
+  searchResults.classList.remove('has-results');
+  searchResults.classList.remove('no-results');
 }
 
 function clearSearch(block) {
@@ -136,6 +138,7 @@ async function renderResults(block, config, filteredData, searchTerms) {
 
   if (filteredData.length) {
     searchResults.classList.remove('no-results');
+    searchResults.classList.add('has-results');
     filteredData.forEach((result) => {
       const li = renderResult(result, searchTerms, headingTag);
       searchResults.append(li);
@@ -235,7 +238,7 @@ function searchInput(block, config) {
 
 function searchIcon() {
   const icon = document.createElement('span');
-  icon.classList.add('icon', 'icon-search');
+  icon.classList.add('icon', 'icon-search-alt');
   return icon;
 }
 
@@ -243,8 +246,8 @@ function searchBox(block, config) {
   const box = document.createElement('div');
   box.classList.add('search-box');
   box.append(
-    searchIcon(),
     searchInput(block, config),
+    searchIcon(),
   );
 
   return box;
