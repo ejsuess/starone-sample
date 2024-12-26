@@ -15,3 +15,7 @@
 ## Block Examples
 
 https://sidekick-library--aem-block-collection--adobe.aem.page/tools/sidekick/library.html?plugin=blocks
+
+## Linting
+
+When the project is ready, change the "lint" script in the package.json file to "lint": "npm run lint:js && npm run lint:css"
