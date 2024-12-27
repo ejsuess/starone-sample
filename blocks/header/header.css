@@ -105,12 +105,12 @@ header .header nav .section.nav-megamenu .default-content-wrapper>ul {
   list-style-type: none;
 }
 
-header .header nav .section.nav-megamenu .default-content-wrapper >ul>li>a+ul,
-header .header nav .section.nav-megamenu .default-content-wrapper >ul>li>a[aria-expanded='false']+ul {
+header .header nav .section.nav-megamenu .default-content-wrapper>ul>li>a+ul,
+header .header nav .section.nav-megamenu .default-content-wrapper>ul>li>a[aria-expanded='false']+ul {
   display: none;
 }
 
-header .header nav .section.nav-megamenu .default-content-wrapper > ul>li {
+header .header nav .section.nav-megamenu .default-content-wrapper>ul>li {
   display: inline-block;
   width: 16.1%;
   box-shadow: 2px 2px 4px #b3b3b3;
@@ -128,7 +128,7 @@ header .header nav .section.nav-megamenu ul>li li {
   color: #337ab7;
 }
 
-header .header nav .section.nav-megamenu .default-content-wrapper >ul>li>a {
+header .header nav .section.nav-megamenu .default-content-wrapper>ul>li>a {
   color: #ffffff;
   padding: 9.5px 39px;
   display: inline-block;
@@ -138,7 +138,7 @@ header .header nav .section.nav-megamenu ul>li:last-child {
   margin-right: 0;
 }
 
-header .header nav .section.nav-megamenu .default-content-wrapper >ul>li>ul {
+header .header nav .section.nav-megamenu .default-content-wrapper>ul>li>ul {
   position: absolute;
   top: 100%;
   background: #ffffff;
@@ -164,7 +164,7 @@ header .header nav .section.nav-megamenu ul>li>ul li:before {
   color: #b3b3b3;
 }
 
-header .header nav .section.nav-megamenu li:not(.loans,.bankcards,.checking,.account,.news)>ul ul li:before,
+header .header nav .section.nav-megamenu li:not(.loans, .bankcards, .checking, .account, .news)>ul ul li:before,
 header .header nav .section.nav-megamenu li.loans>ul ul ul li:before,
 header .header nav .section.nav-megamenu li.bankcards>ul ul ul li:before {
   content: '\0BB \020';
@@ -174,7 +174,7 @@ header .header nav .section.nav-megamenu li.banking>ul>li:first-child,
 header .header nav .section.nav-megamenu li.loans>ul>li:first-child>ul>li:first-child,
 header .header nav .section.nav-megamenu li.bankcards>ul>li:first-child>ul>li:first-child,
 header .header nav .section.nav-megamenu li.checking>ul>li:first-child>ul>li:first-child,
-header .header nav .section.nav-megamenu li.account>ul > li.nav-drop > a,
+header .header nav .section.nav-megamenu li.account>ul>li.nav-drop>a,
 header .header nav .section.nav-megamenu li.news>ul>li:first-child>ul>li:first-child {
   font-size: 16px;
   font-weight: 700;
@@ -188,8 +188,8 @@ header .header nav .section.nav-megamenu li.banking>ul>li:first-child:before,
 header .header nav .section.nav-megamenu li.loans>ul>li:first-child>ul>li:first-child:before,
 header .header nav .section.nav-megamenu li.bankcards>ul>li:first-child>ul>li:first-child:before,
 header .header nav .section.nav-megamenu li.checking>ul>li:first-child>ul>li:first-child:before,
-header .header nav .section.nav-megamenu li.account>ul > li.nav-drop:before,
-header .header nav .section.nav-megamenu li.account>ul > li.nav-drop li.nav-drop:before,
+header .header nav .section.nav-megamenu li.account>ul>li.nav-drop:before,
+header .header nav .section.nav-megamenu li.account>ul>li.nav-drop li.nav-drop:before,
 header .header nav .section.nav-megamenu li.news>ul>li:first-child>ul>li:first-child:before {
   content: '';
   margin-right: 0;
@@ -200,12 +200,14 @@ header .header nav .section.nav-megamenu .default-content-wrapper>ul>li>ul li.na
 }
 
 /* Online & Mobile Banking */
-header .header nav .section.nav-megamenu li.banking >a[aria-expanded='true']+ul {
+header .header nav .section.nav-megamenu li.banking>a[aria-expanded='true']+ul {
   display: block;
 }
-header .header nav .section.nav-megamenu li.banking > ul {
+
+header .header nav .section.nav-megamenu li.banking>ul {
   width: 233px;
 }
+
 header .header nav .section.nav-megamenu li.banking>ul li:last-child {
   border-bottom: none;
 }
@@ -243,24 +245,27 @@ header .header nav .section.nav-megamenu li.loans>ul>li:first-child>ul>li:first-
   margin: 0;
 }
 
-header .header nav .section.nav-megamenu li.loans > ul > li {
-  padding: 0!important;
+header .header nav .section.nav-megamenu li.loans>ul>li {
+  padding: 0 !important;
 }
 
-header .header nav .section.nav-megamenu li.loans > ul > li:not(:first-child) {
-  padding-top: 34px!important;
+header .header nav .section.nav-megamenu li.loans>ul>li:not(:first-child) {
+  padding-top: 34px !important;
 }
 
 header .header nav .section.nav-megamenu li.loans>ul>li:first-child>ul>li:first-child {
   padding-top: 10px;
 }
-header .header nav .section.nav-megamenu li.loans > ul > li:first-child > ul > li:nth-child(2) {
+
+header .header nav .section.nav-megamenu li.loans>ul>li:first-child>ul>li:nth-child(2) {
   border-bottom: none;
 }
-header .header nav .section.nav-megamenu li.loans > ul > li:first-child > ul > li:nth-child(2):before {
+
+header .header nav .section.nav-megamenu li.loans>ul>li:first-child>ul>li:nth-child(2):before {
   display: none;
 }
-header .header nav .section.nav-megamenu li.loans > ul > li:first-child > ul > li:nth-child(2) a {
+
+header .header nav .section.nav-megamenu li.loans>ul>li:first-child>ul>li:nth-child(2) a {
   display: block;
   background: #0067B1;
   color: #ffffff;
@@ -274,73 +279,89 @@ header .header nav .section.nav-megamenu li.loans > ul > li:first-child > ul > l
 }
 
 /* Credit & Debit Cards */
-header .header nav .section.nav-megamenu li.bankcards > ul {
+header .header nav .section.nav-megamenu li.bankcards>ul {
   width: 480px;
   gap: 2%;
   justify-content: space-between;
 }
+
 header .header nav .section.nav-megamenu li.bankcards>a[aria-expanded='true']+ul {
   display: flex;
 }
-header .header nav .section.nav-megamenu li.bankcards > ul > li {
+
+header .header nav .section.nav-megamenu li.bankcards>ul>li {
   padding: 0;
 }
-header .header nav .section.nav-megamenu li.bankcards > ul > li:before {
+
+header .header nav .section.nav-megamenu li.bankcards>ul>li:before {
   display: none;
 }
-header .header nav .section.nav-megamenu li.bankcards > ul > li > ul {
+
+header .header nav .section.nav-megamenu li.bankcards>ul>li>ul {
   padding-left: 0;
 }
+
 header .header nav .section.nav-megamenu li.bankcards>ul ul ul {
   padding-left: 15px;
 }
+
 header .header nav .section.nav-megamenu li.bankcards>ul>li:first-child>ul>li:first-child {
   padding-top: 10px;
 }
-header .header nav .section.nav-megamenu li.bankcards > ul > li:not(:first-child) {
-  padding-top: 34px!important;
+
+header .header nav .section.nav-megamenu li.bankcards>ul>li:not(:first-child) {
+  padding-top: 34px !important;
 }
+
 header .header nav .section.nav-megamenu li.bankcards>ul li:last-child {
   border-bottom: none;
 }
 
 /* Checking, Savings & IRAs */
-header .header nav .section.nav-megamenu li.checking > ul {
+header .header nav .section.nav-megamenu li.checking>ul {
   width: 550px;
   gap: 5%;
 }
+
 header .header nav .section.nav-megamenu li.checking>a[aria-expanded='true']+ul {
   display: flex;
 }
-header .header nav .section.nav-megamenu li.checking > ul > li:before {
+
+header .header nav .section.nav-megamenu li.checking>ul>li:before {
   display: none;
 }
-header .header nav .section.nav-megamenu li.checking > ul > li > ul {
+
+header .header nav .section.nav-megamenu li.checking>ul>li>ul {
   padding-left: 0;
 }
+
 header .header nav .section.nav-megamenu li.checking>ul ul ul {
   padding-left: 15px;
 }
+
 header .header nav .section.nav-megamenu li.checking>ul>li:first-child>ul>li:first-child {
   padding-top: 2px;
 }
-header .header nav .section.nav-megamenu li.checking > ul > li:not(:first-child) {
-  padding-top: 34px!important;
+
+header .header nav .section.nav-megamenu li.checking>ul>li:not(:first-child) {
+  padding-top: 34px !important;
 }
+
 header .header nav .section.nav-megamenu li.checking>ul li:last-child {
   border-bottom: none;
 }
 
 /* Open your Account */
-header .header nav .section.nav-megamenu li.account > ul {
+header .header nav .section.nav-megamenu li.account>ul {
   width: 405px;
   right: 0;
 }
-header .header nav .section.nav-megamenu li.account >a[aria-expanded='true']+ul {
+
+header .header nav .section.nav-megamenu li.account>a[aria-expanded='true']+ul {
   display: block;
 }
 
-header .header nav .section.nav-megamenu li.account > ul > li:not(.nav-drop) a {
+header .header nav .section.nav-megamenu li.account>ul>li:not(.nav-drop) a {
   display: block;
   background: #0067B1;
   color: #ffffff;
@@ -352,62 +373,75 @@ header .header nav .section.nav-megamenu li.account > ul > li:not(.nav-drop) a {
   padding-bottom: 7px;
   margin: 12px auto 0;
 }
-header .header nav .section.nav-megamenu li.account > ul > li:not(.nav-drop):nth-child(2) a {
+
+header .header nav .section.nav-megamenu li.account>ul>li:not(.nav-drop):nth-child(2) a {
   margin-top: 6px;
   margin-bottom: 14px;
 }
-header .header nav .section.nav-megamenu li.account > ul > li:not(.nav-drop),
-header .header nav .section.nav-megamenu li.account > ul > li.nav-drop li:last-child {
+
+header .header nav .section.nav-megamenu li.account>ul>li:not(.nav-drop),
+header .header nav .section.nav-megamenu li.account>ul>li.nav-drop li:last-child {
   border-bottom: none;
 }
 
-header .header nav .section.nav-megamenu li.account > ul > li:not(.nav-drop):before {
+header .header nav .section.nav-megamenu li.account>ul>li:not(.nav-drop):before {
   display: none;
 }
+
 header .header nav .section.nav-megamenu li.account>ul ul {
   padding-left: 0;
 }
-header .header nav .section.nav-megamenu li.account > ul > li.nav-drop li.nav-drop li:before {
+
+header .header nav .section.nav-megamenu li.account>ul>li.nav-drop li.nav-drop li:before {
   content: "\203a";
 }
-header .header nav .section.nav-megamenu li.account > ul > li.nav-drop > ul {
+
+header .header nav .section.nav-megamenu li.account>ul>li.nav-drop>ul {
   display: flex;
   gap: 5%;
 }
 
-header .header nav .section.nav-megamenu li.account > ul > li.nav-drop > ul > li:first-child {
+header .header nav .section.nav-megamenu li.account>ul>li.nav-drop>ul>li:first-child {
   width: 140px;
 }
-header .header nav .section.nav-megamenu li.account > ul > li.nav-drop > ul > li:last-child {
+
+header .header nav .section.nav-megamenu li.account>ul>li.nav-drop>ul>li:last-child {
   width: 180px;
 }
 
 
 
 /* News & Resources */
-header .header nav .section.nav-megamenu li.news > ul {
+header .header nav .section.nav-megamenu li.news>ul {
   width: 445px;
   right: 0;
   gap: 5%;
 }
-header .header nav .section.nav-megamenu li.news >a[aria-expanded='true']+ul {
+
+header .header nav .section.nav-megamenu li.news>a[aria-expanded='true']+ul {
   display: flex;
 }
-header .header nav .section.nav-megamenu li.news > ul > li {
+
+header .header nav .section.nav-megamenu li.news>ul>li {
   width: 50%;
 }
-header .header nav .section.nav-megamenu li.news > ul ul {
+
+header .header nav .section.nav-megamenu li.news>ul ul {
   padding-left: 0;
 }
-header .header nav .section.nav-megamenu li.news > ul > li:before {
+
+header .header nav .section.nav-megamenu li.news>ul>li:before {
   display: none;
 }
+
 header .header nav .section.nav-megamenu li.news li:last-child {
   border-bottom: none;
 }
-header .header nav .section.nav-megamenu li.news > ul > li:not(:first-child) {
-  padding-top: 38px!important;
+
+header .header nav .section.nav-megamenu li.news>ul>li:not(:first-child) {
+  padding-top: 38px !important;
 }
+
 header .header nav .section.nav-megamenu li.news>ul>li:first-child>ul>li:first-child {
   padding-top: 1px;
 }
