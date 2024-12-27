@@ -221,8 +221,14 @@ export default async function decorate(block) {
 
   const navMegamenus = nav.querySelector('.nav-megamenu');
   if (navMegamenus) {
+    const menuitems = ['banking', 'loans', 'bankcards', 'checking', 'account', 'news'];
+    navMegamenus.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((contentItem, i) => {
+      contentItem.classList.add(menuitems[i]);
+    });
+    navMegamenus.querySelectorAll(':scope .default-content-wrapper > ul > li li').forEach((subContentItem, i) => {
+      if (subContentItem.querySelector('ul')) subContentItem.classList.add('nav-drop');
+    });
     navMegamenus.querySelectorAll(':scope .default-content-wrapper > ul > li > a').forEach((navMegamenu) => {
-      if (navMegamenu.querySelector('ul')) navMegamenu.classList.add('nav-drop');
       navMegamenu.addEventListener('click', () => {
         if (isDesktop.matches) {
           const expanded = navMegamenu.getAttribute('aria-expanded') === 'true';

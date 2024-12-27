@@ -14,7 +14,7 @@
 
 ## Block Examples
 
-https://sidekick-library--aem-block-collection--adobe.aem.page/tools/sidekick/library.html?plugin=blocks
+https://main--starone-sample--ejsuess.aem.page/tools/sidekick/library.html?plugin=blocks
 
 ## Linting
 
