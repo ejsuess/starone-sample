@@ -229,7 +229,8 @@ export default async function decorate(block) {
       if (subContentItem.querySelector('ul')) subContentItem.classList.add('nav-drop');
     });
     navMegamenus.querySelectorAll(':scope .default-content-wrapper > ul > li > a').forEach((navMegamenu) => {
-      navMegamenu.addEventListener('click', () => {
+      navMegamenu.addEventListener('click', (e) => {
+        e.preventDefault();
         if (isDesktop.matches) {
           const expanded = navMegamenu.getAttribute('aria-expanded') === 'true';
           toggleAllNavSections(navMegamenus);
