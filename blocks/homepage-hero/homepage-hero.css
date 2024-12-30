@@ -1,0 +1,15 @@
+.homepage-hero-container .homepage-hero {
+  position: relative;
+  height: 360px;
+}
+.homepage-hero-container .homepage-hero > div {
+  position: absolute;
+  width: 100%;
+}
+
+.homepage-hero-container .homepage-hero > div:last-child {
+  display: flex;
+}
+.homepage-hero-container .homepage-hero > div:last-child > div {
+  width: 50%;
+}
