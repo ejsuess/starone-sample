@@ -25,14 +25,12 @@ h2 {
   margin-top: 0;
 }
 
-h3,
-legend,
-h2.h_rates {
+h3 {
   font-size: 27px;
 }
 
-h2.h_rates {
-  margin-top: 20px;
+h4 {
+  font-size: 24px;
 }
 
 h5 {
@@ -46,14 +44,14 @@ a {
 }
 
 a:focus,
-input:focus:not(.login-input),
+input:focus,
 button:focus,
 textarea:focus,
 select:focus {
-  outline-color: #666666!important;
-  outline-style: double!important;
-  outline-width: 5px!important;
-  border: none!important;
+  outline-color: #666666 !important;
+  outline-style: double !important;
+  outline-width: 5px !important;
+  border: none !important;
 }
 
 a .icon-external {
@@ -75,4 +73,12 @@ a .icon-external img {
 
 img {
   max-width: 100%;
+}
+
+main {
+  overflow: hidden;
+}
+
+p {
+  margin-top: 0;
 }

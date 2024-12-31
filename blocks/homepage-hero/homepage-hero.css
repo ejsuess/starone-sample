@@ -2,14 +2,85 @@
   position: relative;
   height: 360px;
 }
-.homepage-hero-container .homepage-hero > div {
+
+.homepage-hero-container .homepage-hero>div {
   position: absolute;
   width: 100%;
 }
 
-.homepage-hero-container .homepage-hero > div:last-child {
-  display: flex;
+.homepage-hero-container .homepage-hero>div:first-child img {
+  position: absolute;
+  left: -285px;
+  object-fit: cover;
 }
-.homepage-hero-container .homepage-hero > div:last-child > div {
+
+.homepage-hero-container .homepage-hero>div:last-child>div:first-child {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 205px;
+  background: rgba(204, 204, 204, 0.9);
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.homepage-hero-container .homepage-hero>div:last-child>div:first-child p {
+  color: #4D4D4D;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.homepage-hero-container .homepage-hero>div:last-child>div:first-child p.button-container {
+  padding-top: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 19px;
+}
+
+.homepage-hero-container .homepage-hero>div:last-child>div:first-child p.button-container a.button {
+  color: #ffffff;
+  font-family: Oswald, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #0067B1;
+  display: block;
+  line-height: 2;
+}
+
+.homepage-hero-container .homepage-hero>div:last-child>div:first-child ul {
+  padding-left: 15px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.homepage-hero-container .homepage-hero>div:last-child>div:first-child ul li {
+  position: relative;
+  line-height: 22px;
+  margin-bottom: 13px;
+}
+
+.homepage-hero-container .homepage-hero>div:last-child>div:first-child ul li:before {
+  content: '\0BB \020';
+  font-size: 22px;
+  color: #666666;
+  position: absolute;
+  left: -15px;
+  top: -2px;
+}
+
+
+.homepage-hero-container .homepage-hero>div:last-child>div:last-child {
   width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.homepage-hero-container .homepage-hero>div:last-child>div img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
